@@ -1,0 +1,14 @@
+
+body {
+  font-family: sans-serif;
+  text-align: center;
+  margin: 2rem;
+}
+img { width: 120px;
+  border-radius: 50%;
+}
+a { display:block;
+  margin: 10px auto;
+  text-decoration: none;
+  color: blue;
+}
