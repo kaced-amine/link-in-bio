@@ -1,14 +1,53 @@
 
 body {
-  font-family: sans-serif;
+  font-family: Arial, sans-serif;
   text-align: center;
-  margin: 2rem;
+  background: #f7f7f7;
+  margin: 0;
+  padding: 30px;
 }
-img { width: 120px;
-  border-radius: 50%;
+
+/* Profile + Extra Images */
+img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 10px;
 }
-a { display:block;
-  margin: 10px auto;
+
+/* Name */
+h1 {
+  margin-top: 20px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+/* Section Title */
+h2 {
+  margin-top: 35px;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+/* Link Buttons */
+a {
+  display: block;
+  width: 250px;
+  margin: 12px auto;
+  padding: 12px;
+  background: #ffffff;
+  border-radius: 8px;
   text-decoration: none;
-  color: blue;
+  font-size: 16px;
+  color: #222;
+  border: 1px solid #ccc;
+  transition: 0.2s;
+}
+
+/* Hover Effect */
+a:hover {
+  background: #222;
+  color: #fff;
+  border-color: #222;
 }
