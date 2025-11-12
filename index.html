@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8">
     <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
       body {
-        font-family: sans-serif;
-        background: linear-gradient(180deg, #111111, #333333);
+        font-family: 'Inter', sans-serif;
+        background: linear-gradient(180deg, #2e026d, #f60174);
         margin: 0;
         padding: 0;
         color: #f2f2f2;
@@ -28,22 +29,45 @@
         margin-top: 15px;
         margin-bottom: 30px;
       }
+      .social-icons-row {
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+.social-icons-row a img {
+  width: 26px;
+  height: 26px;
+  margin: 0 40px; /* wider spacing between icons */
+  opacity: 0.85;
+  transition: opacity 0.2s;
+}
+
+.social-icons-row a img:hover {
+  opacity: 1;
+}
       .links-row a {
-      display:block;
-      margin: 10px 0;
-      margin-top: 20px;
-      text-decoration: none;
-      color: #ffffff;
-      padding: 12px 18px;
-      background: rgba(255, 255, 255, 0.08);
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      border-radius: 18px;
-      transition: 0.25s;
-      }
-     .links-row a:hover {
-      background: rgba(255, 255, 255, 0.18);
-      border-color: rgba(255, 255, 255, 0.35); 
-      }
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 18px;
+  text-decoration: none;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 18px;
+  padding: 12px 18px 12px 12px; /* less left padding */
+  margin: 12px 0;
+  transition: 0.25s;
+}
+
+.links-row a img {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-left: 4px; /* nudge closer to the edge */
+}
+
     </style>
   </head>
 <body>
@@ -58,18 +82,52 @@
     </div>
 
     <div class="social-icons-row">
-  <a href="https://github.com/kaced-amine" target="_blank">GitHub</a>
-  <a href="https://www.facebook.com/Amine.kaced.45" target="_blank">Facebook</a>
-  <a href="https://www.linkedin.com/in/mohammed-amine-kaced-01b00321b" target="_blank">LinkedIn</a>
+  <a href="https://github.com/kaced-amine" target="_blank">
+    <img src="https://img.icons8.com/ios-glyphs/30/ffffff/github.png" alt="GitHub">
+  </a>
+
+  <a href="https://www.linkedin.com/in/mohammed-amine-kaced-01b00321b/" target="_blank">
+    <img src="https://img.icons8.com/ios-filled/30/ffffff/linkedin.png" alt="LinkedIn">
+  </a>
+
+  <a href="https://www.facebook.com/Amine.kaced.45" target="_blank">
+    <img src="https://img.icons8.com/ios-filled/30/ffffff/facebook-new.png" alt="Facebook">
+  </a>
     </div>
 
     <div class="links-row">
-      <a href="https://www.gutenberg.org/ebooks/2680" target="_blank">Meditations — Marcus Aurelius</a><br>
-  <a href="https://www2.hawaii.edu/~freeman/courses/phil360/16.%20Myth%20of%20Sisyphus.pdf" target="_blank">The Myth of Sisyphus — Albert Camus</a><br>
-  <a href="https://aeon.co/essays" target="_blank">Aeon Essays</a><br>
-  <a href="https://www.borges.pitt.edu" target="_blank">Borges — Short Fiction Archive</a><br>
-  <a href="https://www.metmuseum.org/art/collection" target="_blank">The Met Museum Collection</a><br>
-  <a href="https://plato.stanford.edu" target="_blank">Stanford Encyclopedia of Philosophy</a>
+      <<div class="links-row">
+  <div class="links-row">
+  <a href="https://www.gutenberg.org/ebooks/2680" target="_blank">
+    <img src="/thumbnails/aurelius.jpg" alt="Meditations thumbnail">
+    Meditations — Marcus Aurelius
+  </a>
+
+  <a href="https://www2.hawaii.edu/~freeman/courses/phil360/16.%20Myth%20of%20Sisyphus.pdf" target="_blank">
+    <img src="/thumbnails/camus.jpg" alt="The Myth of Sisyphus thumbnail">
+    The Myth of Sisyphus — Albert Camus
+  </a>
+
+  <a href="https://aeon.co/essays" target="_blank">
+    <img src="thumbnails/AEON.jpg" alt="Aeon Essays thumbnail">
+    Aeon Essays
+  </a>
+
+  <a href="https://www.borges.pitt.edu" target="_blank">
+    <img src="thumbnails/borges.jpg" alt="Borges thumbnail">
+    Borges — Short Fiction Archive
+  </a>
+
+  <a href="https://www.metmuseum.org/art/collection" target="_blank">
+    <img src="thumbnails/metmuseum.jpg" alt="Met Museum thumbnail">
+    The Met Museum Collection
+  </a>
+
+  <a href="https://plato.stanford.edu" target="_blank">
+    <img src="thumbnails/plato.jpg" alt="Stanford Philosophy thumbnail">
+    Stanford Encyclopedia of Philosophy
+  </a>
+</div>
     </div>
 
   </div> <!-- end of main-container -->
