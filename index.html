@@ -45,7 +45,7 @@
 .social-icons-row a img:hover {
   opacity: 1;
 }
-      .links-row a {
+.links-row a {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -57,9 +57,14 @@
   border-radius: 18px;
   padding: 12px 18px 12px 12px; /* less left padding */
   margin: 12px 0;
-  transition: 0.25s;
+  transition: background 0.25s, border-color 0.25s, transform 0.2s;
+  text-align: left;
 }
-
+.links-row a:hover {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.35);
+  transform: scale(1.02);
+}
 .links-row a img {
   width: 40px;
   height: 40px;
@@ -96,8 +101,6 @@
     </div>
 
     <div class="links-row">
-      <<div class="links-row">
-  <div class="links-row">
   <a href="https://www.gutenberg.org/ebooks/2680" target="_blank">
     <img src="/thumbnails/aurelius.jpg" alt="Meditations thumbnail">
     Meditations — Marcus Aurelius
