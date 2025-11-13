@@ -43,9 +43,18 @@
   opacity: 0.85;
   transition: opacity 0.2s;
 }
+.social-icons-row {
+  text-align: center;
+}
 
-.social-icons-row a img:hover {
-  opacity: 1;
+.social-icons-row a {
+  display: inline-block;   /* treats each link as a box */
+  margin: 0 20px;          /* controls spacing between icons */
+  text-decoration: none;
+}
+
+.social-icons-row img {
+  vertical-align: middle;  /* keeps them nicely aligned */
 }
 .links-row a {
   display: flex;
